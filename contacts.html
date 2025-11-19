@@ -4,25 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TripMate - Контакти</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
 </head>
 <body>
 
-    <header>
-        
-        <div>
-            <a href="cart.html">Кошик</a>
-            |
-            <a href="login.html">Особистий кабінет</a>
-        </div>
-
-        <hr> <h1>
+<header>
+        <h1>
             <a href="index.html">
-                <img src="images/logo.jpg" alt="Логотип TripMate, повернутися на Головну" width="250">
+                <img src="images/logo.jpg" alt="Логотип TripMate, повернутися на Головну" width="150">
             </a>
         </h1>
-        
+
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+
         <nav>
-            <ul>
+            <ul class="aux-nav">
+                <li><a href="cart.html">Кошик</a></li>
+                <li><a href="login.html">Особистий кабінет</a></li>
+            </ul>
+            
+            <hr class="nav-divider"> <ul class="main-nav">
                 <li><a href="index.html">Головна</a></li>
                 <li><a href="catalog.html">Каталог турів</a></li>
                 <li><a href="blog.html">Блог</a></li>
@@ -30,6 +33,10 @@
                 <li><a href="contacts.html">Контакти</a></li>
             </ul>
         </nav>
+
+        <label for="nav-toggle" class="nav-toggle-label">
+            <span></span> </label>
+        
     </header>
 
     <main>
@@ -40,17 +47,17 @@
             <div>
                 <label for="user-name">Ваше ім'я:</label>
                 <br>
-                <input type="text" id="user-name" name="user_name" placeholder="Іван Петренко">
+                <input type="text" id="user-name" name="user_name" placeholder="Іван Петренко" required>
             </div>
             <div>
                 <label for="user-email">Ваш Email:</label>
                 <br>
-                <input type="email" id="user-email" name="user_email" placeholder="example@gmail.com">
+                <input type="email" id="user-email" name="user_email" placeholder="example@gmail.com" required>
             </div>
             <div>
                 <label for="user-message">Ваше повідомлення:</label>
                 <br>
-                <textarea id="user-message" name="user_message" rows="5" cols="30"></textarea>
+                <textarea id="user-message" name="user_message" rows="5" cols="30" required minlength="10"></textarea>
             </div>
             <div>
                 <button type="submit">Надіслати</button>

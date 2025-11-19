@@ -1,0 +1,106 @@
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    
+    background-color: #f0f0f0;
+    border: 1px solid #d9d9d9;
+    border-radius: 4px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    box-sizing: border-box; 
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+textarea:focus {
+    border-color: #064E3B; 
+    outline: none; 
+}
+
+input:focus:valid,
+textarea:focus:valid {
+    border-color: #065F46;
+    outline-color: #065F46;
+}
+
+input:focus:invalid,
+textarea:focus:invalid {
+    border-color: #e00000;
+    outline-color: #e00000;
+}
+
+button[type="submit"] {
+    background-color: #F59E0B;
+    color: #FFFFFF;
+    
+    padding: 12px 20px;
+    font-size: 16px;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #e08e0b;
+}
+
+label {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    
+    display: block;
+    margin-bottom: 5px; 
+}
+
+.tour-grid article {
+    background-color: #f4f4f4;
+    border: 1px solid #d9d9d9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+    width: 320px; 
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px; 
+}
+
+.tour-grid article img {
+    width: calc(100% - 40px);
+    height: 200px;
+    object-fit: cover;
+    margin: 20px 20px 0 20px; 
+    border-radius: 4px; 
+}
+
+.tour-grid article h3 {
+    font-size: 24px;
+    margin: 15px 20px 10px 20px; 
+    color: #064E3B;
+}
+
+.tour-grid article p {
+    margin: 0 20px 15px 20px;
+    flex-grow: 1;
+    line-height: 1.6; 
+}
+
+.tour-grid article a {
+    background-color: #065F46;
+    color: #FFFFFF;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    padding: 12px 20px;
+    margin: 0 20px; 
+    border-radius: 4px;
+}

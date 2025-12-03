@@ -6,7 +6,7 @@
     <title>TripMate - Вхід</title>
 
     <link rel="stylesheet" href="css/style.css">
-
+    <script src="js/main.js" defer></script>
 </head>
 <body>
 
@@ -16,6 +16,9 @@
                 <img src="images/logo.jpg" alt="Логотип TripMate, повернутися на Головну" width="150">
             </a>
         </h1>
+        <button id="theme-toggle" style="margin-left: 20px; padding: 5px 10px; cursor: pointer; border: 1px solid #ccc; background: white; border-radius: 4px;">
+            🌙 Темна тема
+        </button>
 
         <input type="checkbox" id="nav-toggle" class="nav-toggle">
 
@@ -62,7 +65,7 @@
     </main>
 
     <footer>
-        <p>© 2025 TripMate. Всі права захищено.</p>
+        <p>© <span id="current-date"></span> TripMate. Всі права захищено.</p>
     </footer>
 
 </body>

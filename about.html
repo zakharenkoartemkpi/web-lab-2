@@ -6,7 +6,7 @@
     <title>TripMate - Про нас</title>
 
     <link rel="stylesheet" href="css/style.css">
-    
+    <script src="js/main.js" defer></script>
 </head>
 <body>
 
@@ -16,6 +16,9 @@
                 <img src="images/logo.jpg" alt="Логотип TripMate, повернутися на Головну" width="150">
             </a>
         </h1>
+        <button id="theme-toggle" style="margin-left: 20px; padding: 5px 10px; cursor: pointer; border: 1px solid #ccc; background: white; border-radius: 4px;">
+            🌙 Темна тема
+        </button>
 
         <input type="checkbox" id="nav-toggle" class="nav-toggle">
 
@@ -54,10 +57,20 @@
             <li>Україномовні гіди у складних для комунікації країнах.</li>
             <li>Персоналізовані тури (групові та індивідуальні).</li>
         </ol>
+        <div style="margin-top: 30px;">
+            <p>Хочете дізнатися більше про історію нашого успіху?</p>
+            
+            <button id="toggle-btn" style="padding: 10px 20px; cursor: pointer;">Читати історію</button>
+            
+            <div id="more-text" style="display: none; margin-top: 15px; padding: 15px; background: #f9f9f9; border-left: 4px solid #064E3B;">
+                <p>Все почалось у 2023-му році, коли ми вступили до НН ІПСА, початковою ідеєю було вижити та набирати 60, але щось пішло не так і ми почали вчитись...</p>
+                <p>Тепер ми розробляємо цей сайт паралельно з роботою і задумуємось про світч на фронтенд... до речі, Богдан Сергійович, вітаю з новою позицією в Universe</p>
+            </div>
+        </div>
     </main>
 
     <footer>
-        <p>© 2025 TripMate. Всі права захищено.</p>
+        <p>© <span id="current-date"></span> TripMate. Всі права захищено.</p>
     </footer>
 
 </body>

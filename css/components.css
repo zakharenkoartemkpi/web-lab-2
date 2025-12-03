@@ -104,3 +104,16 @@ label {
     margin: 0 20px; 
     border-radius: 4px;
 }
+
+.error-message {
+    color: #e00000;
+    font-size: 12px;
+    margin-top: -10px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.input-error {
+    border-color: #e00000 !important;
+    background-color: #fff0f0;
+}

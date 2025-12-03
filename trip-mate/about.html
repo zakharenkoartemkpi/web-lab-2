@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TripMate - Про нас</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+
+<header>
+        <h1>
+            <a href="index.html">
+                <img src="images/logo.jpg" alt="Логотип TripMate, повернутися на Головну" width="150">
+            </a>
+        </h1>
+        <button id="theme-toggle" style="margin-left: 20px; padding: 5px 10px; cursor: pointer; border: 1px solid #ccc; background: white; border-radius: 4px;">
+            🌙 Темна тема
+        </button>
+
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+
+        <nav>
+            <ul class="aux-nav">
+                <li><a href="cart.html">Кошик</a></li>
+                <li><a href="login.html">Особистий кабінет</a></li>
+            </ul>
+            
+            <hr class="nav-divider"> <ul class="main-nav">
+                <li><a href="index.html">Головна</a></li>
+                <li><a href="catalog.html">Каталог турів</a></li>
+                <li><a href="blog.html">Блог</a></li>
+                <li><a href="about.html">Про нас</a></li>
+                <li><a href="contacts.html">Контакти</a></li>
+            </ul>
+        </nav>
+
+        <label for="nav-toggle" class="nav-toggle-label">
+            <span></span> </label>
+        
+    </header>
+
+    <main>
+        <h2>Про нас</h2>
+        <p>
+            TripMate - це онлайн-сервіс з готовими турами до країн, де туристам складно
+            організувати подорож самостійно. Ми повністю беремо на себе організацію поїздки.
+        </p>
+
+        <h3>Чому обирають TripMate?</h3>
+        
+        <ol>
+            <li>Повна організація "під ключ" (квитки, готелі, гіди).</li>
+            <li>Гарантія безпеки та локальна підтримка 24/7.</li>
+            <li>Україномовні гіди у складних для комунікації країнах.</li>
+            <li>Персоналізовані тури (групові та індивідуальні).</li>
+        </ol>
+        <div style="margin-top: 30px;">
+            <p>Хочете дізнатися більше про історію нашого успіху?</p>
+            
+            <button id="toggle-btn" style="padding: 10px 20px; cursor: pointer;">Читати історію</button>
+            
+            <div id="more-text" style="display: none; margin-top: 15px; padding: 15px; background: #f9f9f9; border-left: 4px solid #064E3B;">
+                <p>Все почалось у 2023-му році, коли ми вступили до НН ІПСА, початковою ідеєю було вижити та набирати 60, але щось пішло не так і ми почали вчитись...</p>
+                <p>Тепер ми розробляємо цей сайт паралельно з роботою і задумуємось про світч на фронтенд... до речі, Богдан Сергійович, вітаю з новою позицією в Universe</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>© <span id="current-date"></span> TripMate. Всі права захищено.</p>
+    </footer>
+
+</body>
+</html>

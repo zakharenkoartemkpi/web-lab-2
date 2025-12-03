@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TripMate - Каталог турів</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+<header>
+        <h1>
+            <a href="index.html">
+                <img src="images/logo.jpg" alt="Логотип TripMate, повернутися на Головну" width="150">
+            </a>
+        </h1>
+        <button id="theme-toggle" style="margin-left: 20px; padding: 5px 10px; cursor: pointer; border: 1px solid #ccc; background: white; border-radius: 4px;">
+            🌙 Темна тема
+        </button>
+
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+
+        <nav>
+            <ul class="aux-nav">
+                <li><a href="cart.html">Кошик</a></li>
+                <li><a href="login.html">Особистий кабінет</a></li>
+            </ul>
+            
+            <hr class="nav-divider"> <ul class="main-nav">
+                <li><a href="index.html">Головна</a></li>
+                <li><a href="catalog.html">Каталог турів</a></li>
+                <li><a href="blog.html">Блог</a></li>
+                <li><a href="about.html">Про нас</a></li>
+                <li><a href="contacts.html">Контакти</a></li>
+            </ul>
+        </nav>
+
+        <label for="nav-toggle" class="nav-toggle-label">
+            <span></span> </label>
+        
+    </header>
+
+    <main class="catalog-main">
+        
+        <div style="max-width: 1200px; margin: 0 auto; padding: 20px 40px;">
+             <h2>Каталог турів</h2>
+             <p>Обери свою наступну неймовірну подорож!</p>
+        </div>
+
+
+        <div class="tour-grid">
+
+            <article>
+                <h3>Тур до Японії: Сакура та Технології</h3>
+                <img src="images/japan.jpg" alt="Фотографія квітучої сакури біля гори Фудзі в Японії">
+                <p>Відкрийте для себе дивовижну Японію: від футуристичного Токіо до спокійних храмів Кіото.</p>
+                <a href="tour-details.html">Дізнатися більше</a>
+            </article>
+
+            <article>
+                <h3>Льодовики та Вулкани Ісландії</h3>
+                <img src="images/iceland.jpg" alt="Північне сяйво над льодовиком в Ісландії">
+                <p>Подорож до землі льоду та полум'я. Гейзери, водоспади та північне сяйво чекають на вас.</p>
+                <a href="#">Дізнатися більше</a>
+            </article>
+            
+        </div> 
+    </main>
+
+    <footer>
+        <p>© <span id="current-date"></span> TripMate. Всі права захищено.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TripMate - Контакти</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+
+<header>
+        <h1>
+            <a href="index.html">
+                <img src="images/logo.jpg" alt="Логотип TripMate, повернутися на Головну" width="150">
+            </a>
+        </h1>
+        <button id="theme-toggle" style="margin-left: 20px; padding: 5px 10px; cursor: pointer; border: 1px solid #ccc; background: white; border-radius: 4px;">
+            🌙 Темна тема
+        </button>
+
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+
+        <nav>
+            <ul class="aux-nav">
+                <li><a href="cart.html">Кошик</a></li>
+                <li><a href="login.html">Особистий кабінет</a></li>
+            </ul>
+            
+            <hr class="nav-divider"> <ul class="main-nav">
+                <li><a href="index.html">Головна</a></li>
+                <li><a href="catalog.html">Каталог турів</a></li>
+                <li><a href="blog.html">Блог</a></li>
+                <li><a href="about.html">Про нас</a></li>
+                <li><a href="contacts.html">Контакти</a></li>
+            </ul>
+        </nav>
+
+        <label for="nav-toggle" class="nav-toggle-label">
+            <span></span> </label>
+        
+    </header>
+
+    <main>
+        <h2>Наші контакти</h2>
+        <p>Маєте запитання чи пропозиції? Напишіть нам!</p>
+
+        <form id="contact-form" novalidate>
+            <div>
+                <label for="user-name">Ваше ім'я:</label>
+                <br>
+                <input type="text" id="user-name" name="user_name" placeholder="Іван Петренко" required>
+            </div>
+            <div>
+                <label for="user-email">Ваш Email:</label>
+                <br>
+                <input type="email" id="user-email" name="user_email" placeholder="example@gmail.com" required>
+            </div>
+            <div>
+                <label for="user-message">Ваше повідомлення:</label>
+                <br>
+                <textarea id="user-message" name="user_message" rows="5" cols="30" required minlength="10"></textarea>
+            </div>
+            <div>
+                <button type="submit">Надіслати</button>
+            </div>
+        </form>
+        
+        <hr>
+
+        <h3>Інші способи зв'язку</h3>
+
+        <p>
+            <b>Наша пошта:</b> 
+            <a href="mailto:info@tripmate.com">info@tripmate.com</a>
+        </p>
+
+        <div>
+            <a href="https://www.instagram.com/rrragulina" target="_blank">
+                
+                <img src="images/instagram-logo.png" alt="Логотип Instagram" width="20">
+                - наш Інстаграм
+            </a>
+        </div>
+
+        <br> <div>
+            <a href="https://t.me/zab_dev" target="_blank">
+                <img src="images/telegram-logo.png" alt="Логотип Telegram" width="20">
+                - наш Телеграм
+            </a>
+        </div>
+        
+    </main>
+
+    <footer>
+        <p>© <span id="current-date"></span> TripMate. Всі права захищено.</p>
+    </footer>
+
+</body>
+</html>

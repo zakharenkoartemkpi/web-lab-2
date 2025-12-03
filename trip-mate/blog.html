@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TripMate - Блог</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+<header>
+        <h1>
+            <a href="index.html">
+                <img src="images/logo.jpg" alt="Логотип TripMate, повернутися на Головну" width="150">
+            </a>
+        </h1>
+        <button id="theme-toggle" style="margin-left: 20px; padding: 5px 10px; cursor: pointer; border: 1px solid #ccc; background: white; border-radius: 4px;">
+            🌙 Темна тема
+        </button>
+
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+
+        <nav>
+            <ul class="aux-nav">
+                <li><a href="cart.html">Кошик</a></li>
+                <li><a href="login.html">Особистий кабінет</a></li>
+            </ul>
+            
+            <hr class="nav-divider"> <ul class="main-nav">
+                <li><a href="index.html">Головна</a></li>
+                <li><a href="catalog.html">Каталог турів</a></li>
+                <li><a href="blog.html">Блог</a></li>
+                <li><a href="about.html">Про нас</a></li>
+                <li><a href="contacts.html">Контакти</a></li>
+            </ul>
+        </nav>
+
+        <label for="nav-toggle" class="nav-toggle-label">
+            <span></span> </label>
+        
+    </header>
+
+    <main>
+        <h2>Наш Блог</h2>
+        <p>Статті про подорожі, поради туристам та новини компанії.</p>
+    </main>
+
+    <footer>
+        <p>© <span id="current-date"></span> TripMate. Всі права захищено.</p>
+    </footer>
+</body>
+</html>

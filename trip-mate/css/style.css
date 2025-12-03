@@ -1,0 +1,75 @@
+
+@import url('base.css');      
+@import url('layout.css');    
+@import url('components.css'); 
+
+
+@media (max-width: 768px) {
+    .nav-toggle-label {
+        display: block;
+    }
+
+    header nav {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: #FFFFFF;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    .nav-toggle:checked ~ nav {
+        display: block; 
+    }
+    header .main-nav,
+    header .aux-nav {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    header .main-nav li,
+    header .aux-nav li {
+        display: block;
+        text-align: center;
+    }
+    header .main-nav a,
+    header .aux-nav a {
+        display: block;
+        padding: 15px;
+        border-bottom: 1px solid #f0f0f0;
+    }
+    header .aux-nav,
+    header .nav-divider {
+        display: block;
+        margin: 10px 0;
+        border: none;
+        border-top: 2px solid #064E3B;
+    }
+    header {
+        flex-direction: row;
+        gap: 0;
+    }
+}
+
+body.dark-theme {
+    background-color: #1a1a1a;
+    color: #f0f0f0;
+}
+
+body.dark-theme .tour-grid article {
+    background-color: #2d2d2d;
+    border-color: #444;
+}
+
+body.dark-theme h1, 
+body.dark-theme h2, 
+body.dark-theme h3 {
+    color: #A7F3D0;
+}
+body.dark-theme header {
+    background-color: #0d3326;
+    border-bottom-color: #444;
+}
+body.dark-theme footer {
+    background-color: #062b21;
+}
